@@ -1,0 +1,178 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/femmy/Desktop/projects/Churchbook/Application/Application.csproj": {}
+  },
+  "projects": {
+    "/Users/femmy/Desktop/projects/Churchbook/Application/Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/femmy/Desktop/projects/Churchbook/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/femmy/Desktop/projects/Churchbook/Application/Application.csproj",
+        "packagesPath": "/Users/femmy/.nuget/packages/",
+        "outputPath": "/Users/femmy/Desktop/projects/Churchbook/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/femmy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/femmy/Desktop/projects/Churchbook/Domain/Domain.csproj": {
+                "projectPath": "/Users/femmy/Desktop/projects/Churchbook/Domain/Domain.csproj"
+              },
+              "/Users/femmy/Desktop/projects/Churchbook/Persistence/Persistence.csproj": {
+                "projectPath": "/Users/femmy/Desktop/projects/Churchbook/Persistence/Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/femmy/Desktop/projects/Churchbook/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/femmy/Desktop/projects/Churchbook/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/femmy/Desktop/projects/Churchbook/Domain/Domain.csproj",
+        "packagesPath": "/Users/femmy/.nuget/packages/",
+        "outputPath": "/Users/femmy/Desktop/projects/Churchbook/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/femmy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/femmy/Desktop/projects/Churchbook/Persistence/Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/femmy/Desktop/projects/Churchbook/Persistence/Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "/Users/femmy/Desktop/projects/Churchbook/Persistence/Persistence.csproj",
+        "packagesPath": "/Users/femmy/.nuget/packages/",
+        "outputPath": "/Users/femmy/Desktop/projects/Churchbook/Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/femmy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/femmy/Desktop/projects/Churchbook/Domain/Domain.csproj": {
+                "projectPath": "/Users/femmy/Desktop/projects/Churchbook/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
