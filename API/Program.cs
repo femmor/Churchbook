@@ -29,5 +29,21 @@ app.UseAuthorization();
 // Map the controllers to the endpoints.
 app.MapControllers();
 
+// Creates the database if it doesn't exist.
+using var scope = app.Services.CreateScope();
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+      var context = services.GetRequiredService<DataContext>();
+      context.Database.Migrate();
+    }
+    catch (Exception ex)
+    {
+      var logger = services.GetRequiredService<ILogger<Program>>();
+      logger.LogError(ex, "An error occurred during migration");
+    }
+}
+
 // Run the web application.
 app.Run();
