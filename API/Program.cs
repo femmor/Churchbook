@@ -9,6 +9,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+// Add Cors policy to allow the React app to access the API.
+builder.Services.AddCors(opt =>
+{
+  opt.AddPolicy("CorsPolicy", policy =>
+  {
+    policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000");
+  });
+});
 
 // Declare the application's entry point.
 var app = builder.Build();
@@ -19,6 +27,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Use the Cors policy to allow the React app to access the API.
+app.UseCors("CorsPolicy");
 
 // Use the routing middleware to map endpoints.
 app.UseHttpsRedirection();
