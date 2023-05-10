@@ -1,6 +1,6 @@
 import { FC, useState, useEffect } from 'react';
-import './App.css';
 import axios from 'axios';
+import { Header, List } from 'semantic-ui-react';
 
 export interface AppProps {}
 
@@ -22,12 +22,14 @@ const App: FC<AppProps> = () => {
 
   return (
     <div className='App'>
-      <h1>React App</h1>
-      <ul>
+      <Header as='h2' icon='users' content='Churtivities' />
+      <List>
         {activities?.map((activity: any, idx) => {
-          return <li key={activity.id}>{activity.title}</li>;
+          return (
+            <List.Item key={activity.id}>{activity.title}</List.Item>
+          );
         })}
-      </ul>
+      </List>
     </div>
   );
 };
